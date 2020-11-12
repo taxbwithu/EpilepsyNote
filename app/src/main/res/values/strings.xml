@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">EpilepsyNote</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="seizure_series_descr">Seria ataków zostaje przerwana, gdy atak nie wystąpił przez:</string>
+    <string name="seizure_series_count_descr">Seria ataków wymaga wystąpienia nie mniej niż:</string>
 </resources>

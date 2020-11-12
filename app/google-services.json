@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "625355183171",
+    "firebase_url": "https://epilepsynote-f3ca3.firebaseio.com",
+    "project_id": "epilepsynote-f3ca3",
+    "storage_bucket": "epilepsynote-f3ca3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625355183171:android:b484eb898574da182b70f6",
+        "android_client_info": {
+          "package_name": "com.mmoson.epilepsynote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "625355183171-4427ii447nmcmd5g9q95mm2aer95t7n3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjOV9-oSXpJlcIWWSMaH4jlBVyLuXMSvM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "625355183171-4427ii447nmcmd5g9q95mm2aer95t7n3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

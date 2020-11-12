@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_main">
+
+    <fragment
+        android:id="@+id/nav_main"
+        android:name="com.mmoson.epilepsynote.ui.MainFragment"
+        android:label="Panel Główny"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_nav_main_to_listFragment"
+            app:destination="@id/nav_list" />
+        <action
+            android:id="@+id/action_nav_main_to_exportFragment"
+            app:destination="@id/nav_export" />
+        <action
+            android:id="@+id/action_nav_main_to_settingsFragment"
+            app:destination="@id/nav_settings" />
+        <action
+            android:id="@+id/action_add"
+            app:destination="@id/nav_add" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_list"
+        android:name="com.mmoson.epilepsynote.ui.ListFragment"
+        android:label="Ostatnie Ataki"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_nav_list_to_calendarFragment"
+            app:destination="@id/nav_cal" />
+        <action
+            android:id="@+id/destination_seizureedit"
+            app:destination="@id/nav_seizureEdit" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_cal"
+        android:name="com.mmoson.epilepsynote.ui.CalendarFragment"
+        android:label="Kalendarz Ataków" >
+        <action
+            android:id="@+id/destination_seizureedit"
+            app:destination="@id/nav_seizureEdit" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_export"
+        android:name="com.mmoson.epilepsynote.ui.ExportFragment"
+        android:label="Eksportuj do PDF"
+        tools:layout="@layout/fragment_export" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.mmoson.epilepsynote.ui.SettingsFragment"
+        android:label="Ustawienia"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/nav_add"
+        android:name="com.mmoson.epilepsynote.ui.AddFragment"
+        android:label="Dodaj Atak" />
+    <fragment
+        android:id="@+id/nav_seizureEdit"
+        android:name="com.mmoson.epilepsynote.ui.SeizureEditFragment"
+        android:label="Edytuj Atak" >
+        <argument android:name="seizureID"
+            app:argType="string" />
+    </fragment>
+</navigation>
